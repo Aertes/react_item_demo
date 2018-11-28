@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './home.css';
+import './home.scss';
 
-import Headers from '../../components/header/Header'
+import Headers from '../../layouts/header/Header'
 class Home extends Component {
   render() {
     return (
