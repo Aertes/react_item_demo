@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { DatePicker  } from "antd";
-class Header extends Component {
+import { DatePicker, Button  } from "antd";
+import './header.scss'
+class Headers extends Component {
   render() {
     return (
-      <div>
+      <div className='header'>
+        <Button type="primary">Button</Button>
         <DatePicker />
       </div>
     );
   }
 }
 
-export default Header;
+export default Headers;
