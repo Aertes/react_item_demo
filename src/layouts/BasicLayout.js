@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
-import { Layout, Menu, Icon } from 'antd';
-import './home.scss';
-const { Header, Sider, Content } = Layout;
+import React, { Suspense } from 'react';
+import { Layout } from 'antd';
+import DocumentTitle from 'react-document-title';
+import isEqual from 'lodash/isEqual';
+import memoizeOne from 'memoize-one';
+import { connect } from "dva";
+import { ContainerQuery } from "react-container-query";
 
 
-class Home extends Component {
+
+class BasicLayout extends Component {
   state = {
     collapsed: false,
   }
@@ -60,4 +64,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default BasicLayout;
