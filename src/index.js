@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import 'antd/dist/antd.css'
+import './assets/mian.scss'
 
 import Home from './pages/home/Home'
 import * as serviceWorker from './serviceWorker';
